@@ -269,9 +269,10 @@ app.get("/dashboard", (req, res) => {
   res.sendFile(path.join(__dirname, "dashboard.html"));
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`
+// Start server if run directly
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`
 ╔════════════════════════════════════════════════════════════╗
 ║                                                            ║
 ║   🖼️  Gallery History Server                              ║
@@ -289,4 +290,7 @@ app.listen(PORT, () => {
 ║                                                            ║
 ╚════════════════════════════════════════════════════════════╝
     `);
-});
+  });
+}
+
+module.exports = app;
