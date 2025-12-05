@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Journey of the Year - Perjalanan foto sepanjang tahun dalam tampilan 3D interaktif"
+    />
+    <title>Journey of the Year | Galeri History</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+      <div class="nav-line"></div>
+      <div class="nav-dots"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-subtitle">
+          <span>2025</span>
+          <div class="line"></div>
+          <span>Edo Priyatna (Douzxy)</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="word">Journey</span>
+          <span class="word outline">of the</span>
+          <span class="word">Year</span>
+        </h1>
+        <p class="hero-desc">
+          Scroll untuk memulai perjalanan melalui 12 bulan kenangan
+        </p>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+      <div class="hero-bg-text">MEMORIES</div>
+    </section>
+
+    <!-- Month Sections -->
+    <div id="months-container"></div>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="footer-content">
+        <h2>End of Journey</h2>
+        <p>Terima kasih telah melihat perjalanan tahun ini</p>
+        <button class="restart-btn">
+          <span>Kembali ke Awal</span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+        </button>
+        <p class="footer-credit">2025 - Edo Priyatna (Douzxy)</p>
+      </div>
+    </section>
+
+    <!-- Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- App Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
