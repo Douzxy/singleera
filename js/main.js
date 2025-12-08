@@ -585,6 +585,21 @@ function closeWelcomeModal() {
 }
 
 // ============================================
+// Footer / Navigation
+// ============================================
+function setupFooter() {
+  const restartBtn = document.querySelector(".restart-btn");
+  if (restartBtn) {
+    restartBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  }
+}
+
+// ============================================
 // Initialize
 // ============================================
 // ============================================
@@ -607,6 +622,7 @@ async function initApp() {
   createWelcomeModal();
   initThree();
   initCustomCursor();
+  setupFooter();
 
   // Refresh cursor listeners after content loads
   setTimeout(refreshCursorListeners, 500);
