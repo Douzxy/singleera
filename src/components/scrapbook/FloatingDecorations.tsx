@@ -1,24 +1,21 @@
-'use client'
+"use client";
 
 export default function FloatingDecorations() {
-  // Reduced romantic decoration emojis for better performance
+  // Personal memory decoration icons - masculine theme
   const decorations = [
-    { emoji: '💕', top: '10%', left: '5%', size: 28, delay: 0 },
-    { emoji: '✨', top: '22%', right: '8%', size: 22, delay: 1 },
-    { emoji: '🌹', top: '45%', right: '5%', size: 30, delay: 2 },
-    { emoji: '💗', top: '58%', left: '6%', size: 32, delay: 0.5 },
-    { emoji: '🌸', top: '75%', right: '7%', size: 26, delay: 1.5 },
-    { emoji: '💝', top: '30%', left: '93%', size: 24, delay: 2.5 },
-    { emoji: '⭐', top: '65%', left: '94%', size: 20, delay: 0.8 },
-    { emoji: '💖', top: '88%', right: '92%', size: 26, delay: 1.8 },
-  ]
+    { emoji: "😎", top: "10%", left: "5%", size: 28, delay: 0 },
+    { emoji: "☕", top: "22%", right: "8%", size: 24, delay: 1 },
+    { emoji: "🏔️", top: "45%", right: "5%", size: 30, delay: 2 },
+    { emoji: "🔥", top: "58%", left: "6%", size: 28, delay: 0.5 },
+    { emoji: "🌄", top: "75%", right: "7%", size: 26, delay: 1.5 },
+    { emoji: "🎸", top: "30%", left: "93%", size: 26, delay: 2.5 },
+    { emoji: "⭐", top: "65%", left: "94%", size: 22, delay: 0.8 },
+    { emoji: "🚀", top: "88%", right: "92%", size: 26, delay: 1.8 },
+  ];
 
   return (
     <>
-      <div 
-        className="floating-container"
-        aria-hidden="true"
-      >
+      <div className="floating-container" aria-hidden="true">
         {decorations.map((deco, i) => (
           <span
             key={i}
@@ -54,7 +51,8 @@ export default function FloatingDecorations() {
         }
 
         @keyframes gentleFloat {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0) rotate(0deg);
           }
           50% {
@@ -63,6 +61,5 @@ export default function FloatingDecorations() {
         }
       `}</style>
     </>
-  )
+  );
 }
-

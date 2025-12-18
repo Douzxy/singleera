@@ -28,7 +28,7 @@ export default function StickyNote({
       <div className="pin absolute -top-2 left-1/2 -translate-x-1/2" />
       
       {/* Text - gray-700 for better readability */}
-      <p className="font-handwriting text-xl md:text-2xl text-gray-700 leading-relaxed">
+      <p className="font-handwriting text-xl md:text-2xl text-white leading-relaxed">
         {text}
       </p>
     </div>

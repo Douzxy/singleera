@@ -5,27 +5,32 @@
 @tailwind utilities;
 
 :root {
-  /* Romantic Love Palette */
-  --blush-pink: #FFB6C1;
-  --rose-gold: #E8A0BF;
-  --deep-rose: #C54B6C;
-  --champagne: #F7E7CE;
-  --soft-lavender: #DCD6F7;
-  --burgundy: #800020;
-  --cream-white: #FFF8F0;
-  
-  /* Aliases */
-  --cream: #FFF8F0;
-  --peach: #FFB6C1;
-  --coral: #C54B6C;
-  --butter: #F7E7CE;
-  --mint: #DCD6F7;
-  --lavender: #DCD6F7;
-  --blush: #E8A0BF;
-  --rust: #C54B6C;
-  --clay: #E8A0BF;
-  --slate: #800020;
-  --taupe: #D4A5A5;
+  /* Masculine Warm Earthy Palette */
+  --sand: #f2e9d8;
+  --clay: #d9a566;
+  --denim: #3e5c76;
+  --olive: #6b7443;
+  --rust: #c06e52;
+  --taupe: #a68a64;
+  --slate: #4a4e69;
+
+  /* Backward compatibility aliases */
+  --cream: #f2e9d8;
+  --cream-white: #f2e9d8;
+  --peach: #d9a566;
+  --coral: #c06e52;
+  --butter: #e8dcc4;
+  --mint: #8b9a6b;
+  --lavender: #7a8599;
+  --blush: #c9a87c;
+
+  /* Legacy aliases for smooth transition */
+  --blush-pink: #d9a566;
+  --rose-gold: #c9a87c;
+  --deep-rose: #c06e52;
+  --champagne: #e8dcc4;
+  --soft-lavender: #7a8599;
+  --burgundy: #4a4e69;
 }
 
 * {
@@ -63,14 +68,14 @@ body {
   font-family: "Outfit", sans-serif;
   background: linear-gradient(
     180deg,
-    var(--cream-white) 0%,
-    #FFF0F5 25%,
-    #FFE4EC 50%,
-    #FFF0F5 75%,
-    var(--cream-white) 100%
+    var(--sand) 0%,
+    #ede4d3 25%,
+    var(--butter) 50%,
+    #ede4d3 75%,
+    var(--sand) 100%
   );
   background-attachment: fixed;
-  color: #4A4A4A;
+  color: #3a3a3a;
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -96,11 +101,11 @@ body::before {
 
 /* Photo Card Styles */
 .photo-card {
-  background: #FFFDF9;
+  background: #fffdf9;
   padding: 12px;
   padding-bottom: 40px;
-  box-shadow: 0 4px 6px rgba(197, 75, 108, 0.1), 0 10px 20px rgba(197, 75, 108, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(139, 90, 43, 0.15),
+    0 10px 20px rgba(139, 90, 43, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9);
   border-radius: 3px;
   position: relative;
 }
@@ -112,25 +117,25 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 1px solid rgba(232, 160, 191, 0.2);
+  border: 1px solid rgba(139, 90, 43, 0.15);
   border-radius: 3px;
   pointer-events: none;
 }
 
-/* Tape Effect - Darker Rose tint */
+/* Tape Effect - Brown/Wood Style */
 .tape {
   position: absolute;
   width: 80px;
   height: 25px;
   background: linear-gradient(
     135deg,
-    rgba(232, 160, 191, 0.85) 0%,
-    rgba(197, 75, 108, 0.75) 50%,
-    rgba(232, 160, 191, 0.85) 100%
+    rgba(180, 140, 100, 0.9) 0%,
+    rgba(139, 90, 43, 0.85) 50%,
+    rgba(180, 140, 100, 0.9) 100%
   );
   opacity: 0.95;
   z-index: 10;
-  box-shadow: 0 1px 3px rgba(197, 75, 108, 0.3);
+  box-shadow: 0 1px 3px rgba(80, 50, 20, 0.3);
 }
 
 .tape::before {
@@ -144,8 +149,8 @@ body::before {
     90deg,
     transparent,
     transparent 2px,
-    rgba(255, 255, 255, 0.3) 2px,
-    rgba(255, 255, 255, 0.3) 4px
+    rgba(255, 255, 255, 0.2) 2px,
+    rgba(255, 255, 255, 0.2) 4px
   );
 }
 
@@ -167,14 +172,14 @@ body::before {
   transform: rotate(45deg);
 }
 
-/* Pin Effect - Deep Rose */
+/* Pin Effect - Brown/Copper */
 .pin {
   position: absolute;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #E8A0BF, #C54B6C);
-  box-shadow: 0 2px 4px rgba(128, 0, 32, 0.3),
+  background: radial-gradient(circle at 30% 30%, #b08860, #8b5a2b);
+  box-shadow: 0 2px 4px rgba(80, 50, 20, 0.3),
     inset 0 2px 4px rgba(255, 255, 255, 0.4);
   z-index: 15;
 }
@@ -191,11 +196,12 @@ body::before {
   border-radius: 0 0 2px 2px;
 }
 
-/* Sticky Note - Champagne style */
+/* Sticky Note - Warm paper style */
 .sticky-note {
   padding: 20px;
-  background: linear-gradient(135deg, var(--champagne) 0%, #FFF5E6 100%);
-  box-shadow: 2px 2px 8px rgba(197, 75, 108, 0.12), inset 0 -2px 0 rgba(0, 0, 0, 0.03);
+  background: linear-gradient(135deg, var(--butter) 0%, #fff5e6 100%);
+  box-shadow: 2px 2px 8px rgba(139, 90, 43, 0.15),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.03);
   transform: rotate(-2deg);
   position: relative;
 }
@@ -207,7 +213,7 @@ body::before {
   right: 0;
   border-width: 0 25px 25px 0;
   border-style: solid;
-  border-color: rgba(197, 75, 108, 0.05) var(--cream-white) rgba(197, 75, 108, 0.05);
+  border-color: rgba(139, 90, 43, 0.05) var(--cream) rgba(139, 90, 43, 0.05);
 }
 
 /* Torn Paper Edge */
@@ -225,11 +231,11 @@ body::before {
   background: linear-gradient(
     135deg,
     transparent 25%,
-    #FFFDF9 25%,
-    #FFFDF9 50%,
+    #fffdf9 25%,
+    #fffdf9 50%,
     transparent 50%,
     transparent 75%,
-    #FFFDF9 75%
+    #fffdf9 75%
   );
   background-size: 20px 20px;
   clip-path: polygon(
@@ -275,7 +281,7 @@ body::before {
   position: absolute;
   width: 6px;
   height: 6px;
-  background: radial-gradient(circle, #E8A0BF, #C54B6C);
+  background: radial-gradient(circle, #e8a0bf, #c54b6c);
   border-radius: 50%;
   animation: glitter 1.5s ease-in-out infinite;
   opacity: 0;
@@ -328,7 +334,8 @@ body::before {
 }
 
 @keyframes heartbeat {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -341,7 +348,12 @@ body::before {
   font-family: "Caveat", cursive;
   font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 700;
-  background: linear-gradient(135deg, var(--deep-rose), var(--rose-gold), var(--blush-pink));
+  background: linear-gradient(
+    135deg,
+    var(--deep-rose),
+    var(--rose-gold),
+    var(--blush-pink)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -428,7 +440,7 @@ body::before {
   transform: translateX(100px) rotate(5deg);
 }
 
-/* Music Control Button - Romantic style */
+/* Music Control Button - Brown/Wood style */
 .music-control {
   position: fixed;
   bottom: 24px;
@@ -436,21 +448,21 @@ body::before {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--rose-gold), var(--deep-rose));
+  background: linear-gradient(135deg, #b08860, #8b5a2b);
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  box-shadow: 0 4px 15px rgba(197, 75, 108, 0.3);
+  box-shadow: 0 4px 15px rgba(139, 90, 43, 0.3);
   transition: all 0.3s ease;
   z-index: 1001;
 }
 
 .music-control:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(197, 75, 108, 0.4);
+  box-shadow: 0 6px 20px rgba(139, 90, 43, 0.4);
 }
 
 .music-control:active {
@@ -462,22 +474,23 @@ body::before {
 }
 
 @keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 4px 15px rgba(197, 75, 108, 0.3);
+  0%,
+  100% {
+    box-shadow: 0 4px 15px rgba(139, 90, 43, 0.3);
   }
   50% {
-    box-shadow: 0 4px 25px rgba(232, 160, 191, 0.5);
+    box-shadow: 0 4px 25px rgba(180, 140, 100, 0.5);
   }
 }
 
-/* Music Modal - Romantic style */
+/* Music Modal - Brown/Wood style */
 .music-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(128, 0, 32, 0.4);
+  background: rgba(80, 50, 20, 0.4);
   backdrop-filter: blur(4px);
   display: flex;
   align-items: center;
@@ -487,20 +500,20 @@ body::before {
 }
 
 .music-modal {
-  background: linear-gradient(135deg, var(--cream-white) 0%, #FFF0F5 100%);
+  background: linear-gradient(135deg, var(--sand) 0%, var(--butter) 100%);
   padding: 40px;
   border-radius: 20px;
   text-align: center;
   max-width: 400px;
   margin: 20px;
-  box-shadow: 0 20px 60px rgba(197, 75, 108, 0.3);
+  box-shadow: 0 20px 60px rgba(139, 90, 43, 0.3);
   animation: slideUp 0.4s ease;
 }
 
 .music-modal h2 {
   font-family: "Caveat", cursive;
   font-size: 2rem;
-  color: var(--deep-rose);
+  color: #8b5a2b;
   margin-bottom: 12px;
 }
 
@@ -527,28 +540,32 @@ body::before {
 }
 
 .music-modal .btn-yes {
-  background: linear-gradient(135deg, var(--rose-gold), var(--deep-rose));
+  background: linear-gradient(135deg, #b08860, #8b5a2b);
   color: white;
 }
 
 .music-modal .btn-yes:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(197, 75, 108, 0.4);
+  box-shadow: 0 6px 20px rgba(139, 90, 43, 0.4);
 }
 
 .music-modal .btn-no {
-  background: var(--soft-lavender);
-  color: #666;
+  background: var(--lavender);
+  color: #fff;
 }
 
 .music-modal .btn-no:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(220, 214, 247, 0.5);
+  box-shadow: 0 6px 20px rgba(122, 133, 153, 0.5);
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {

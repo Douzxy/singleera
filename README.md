@@ -1,4 +1,4 @@
-# 💕 Our Love Story - Digital Scrapbook 2025
+# 🏔️ Journey Of The Year - Digital Journal 2025
 
 <div align="center">
 
@@ -7,7 +7,7 @@
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock)
 
-**A romantic digital scrapbook celebrating love throughout the year 2025**
+**A personalized digital journal documenting memories and adventures throughout 2025**
 
 [English](#english) | [Bahasa Indonesia](#bahasa-indonesia)
 
@@ -19,35 +19,35 @@
 
 ### ✨ About
 
-Our Love Story is a beautiful, interactive web application designed as a romantic digital scrapbook. It showcases memories month by month with smooth animations, decorative elements, and a lovely aesthetic inspired by love and romance.
+**Journey Of The Year** is a premium, interactive digital scrapbook designed with a **masculine warm earthy palette**. It captures personal memories and achievements month-by-month through a sophisticated journal aesthetic, featuring paper textures, organic shapes, and fluid animations.
 
 ### 🎨 Features
 
-- **📅 12 Month Sections** - Each month has its own section with photos and romantic notes
-- **🌐 Bilingual Support** - Toggle between English and Indonesian languages
-- **🎵 Background Music** - Optional romantic background music
-- **✨ Smooth Animations** - Powered by GSAP with scroll-triggered reveals
-- **📱 Responsive Design** - Beautiful on all devices
-- **🎀 Scrapbook Elements** - Sticky notes, tape effects, stickers, doodles
-- **💫 Floating Decorations** - Hearts, stars, and romantic elements
+- **📔 Cinematic Journaling** - 12 monthly sections with dedicated photo galleries and personal notes.
+- **🍂 Warm Earthy Aesthetic** - A curated theme using Sand, Clay, Denim, and Olive tones for a mature, organic feel.
+- **✨ Fluid GSAP Animations** - Smooth-scroll reveals, parallax headers, and interactive scrapbook elements.
+- **🖋️ Scrapbook Elements** - Authentic torn paper effects, wooden tape, copper pins, and personal doodles.
+- **🌐 Bilingual Support** - Seamlessly toggle between English and Bahasa Indonesia.
+- **🎵 Atmospheric Audio** - Optional background music to enhance the storytelling experience.
+- **📱 Ultra Responsive** - Meticulously crafted to look stunning on mobile, tablet, and desktop.
 
 ### 🛠️ Tech Stack
 
 - **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript
-- **Styling**: TailwindCSS + Custom CSS
-- **Animations**: GSAP + ScrollTrigger
-- **Smooth Scroll**: Lenis
-- **Fonts**: Caveat (handwriting) + Outfit (body)
+- **Styling**: TailwindCSS & Vanilla CSS (Fluid Layouts)
+- **Animations**: GSAP (GreenSock) + ScrollTrigger
+- **Smooth Scroll**: Lenis Scroll
+- **Typography**: Outfit (Modern Sans) & Caveat (Personal Handwriting)
+- **Theme**: Custom Earthy Design System
 
 ### 🚀 Getting Started
 
 ```bash
 # Clone the repository
-git clone https://github.com/Douzxy/our-love-story.git
+git clone https://github.com/Douzxy/Journey-of-the-Year.git
 
 # Navigate to project
-cd our-love-story
+cd Journey-of-the-Year
 
 # Install dependencies
 npm install
@@ -58,57 +58,16 @@ npm run dev
 # Open http://localhost:3000
 ```
 
-### 📁 Project Structure
+### 📁 Highlights
 
-```
-src/
-├── app/
-│   ├── globals.css      # Global styles & romantic theme
-│   ├── layout.tsx       # Root layout with providers
-│   └── page.tsx         # Main page with month data
-├── components/
-│   ├── Header.tsx       # Hero section
-│   ├── MonthSection.tsx # Monthly photo galleries
-│   ├── PhotoCard.tsx    # Individual photo cards
-│   ├── MusicPlayer.tsx  # Music + language controls
-│   ├── ClientLayout.tsx # Client-side providers
-│   └── scrapbook/       # Decorative elements
-│       ├── StickyNote.tsx
-│       ├── Sticker.tsx
-│       ├── Doodle.tsx
-│       └── ...
-├── context/
-│   └── LanguageContext.tsx  # i18n translations
-└── public/
-    ├── photos/          # Your photos organized by month
-    └── music/           # Background music
-```
-
-### 📸 Adding Your Photos
-
-1. Create folders in `public/photos/` for each month:
-
-   ```
-   public/photos/january/
-   public/photos/february/
-   ...
-   ```
-
-2. Add numbered photos (1.jpg, 2.jpg, etc.)
-
-3. Update captions in `src/context/LanguageContext.tsx`
-
-### 🎵 Adding Music
-
-Place your background music file at:
-
-```
-public/music/background.mp3
-```
+- `src/app/globals.css`: The "Heart" of the design system containing the earthy palette variables.
+- `src/components/scrapbook/`: Dedicated directory for decorative elements like `Doodle`, `Sticker`, `Blob`, and `Star`.
+- `src/context/LanguageContext.tsx`: Centralized management for multi-language support and content.
+- `src/components/LoginPage.tsx`: A private entry gate with a sleek, glassmorphic design.
 
 ### 📄 License
 
-MIT License - Feel free to use for your own love story! 💕
+MIT License - Feel free to use for your own journey! 🏔️
 
 ---
 
@@ -116,81 +75,57 @@ MIT License - Feel free to use for your own love story! 💕
 
 ### ✨ Tentang
 
-Our Love Story adalah aplikasi web interaktif yang dirancang sebagai scrapbook digital romantis. Menampilkan kenangan bulan demi bulan dengan animasi halus, elemen dekoratif, dan estetika indah yang terinspirasi dari cinta dan romansa.
+**Journey Of The Year** adalah scrapbook digital interaktif premium yang dirancang dengan **palet warna maskulin warm earthy**. Aplikasi ini mengabadikan kenangan pribadi dan pencapaian bulan demi bulan melalui estetika jurnal yang canggih, menampilkan tekstur kertas, bentuk organik, dan animasi yang mengalir.
 
-### 🎨 Fitur
+### 🎨 Fitur Utama
 
-- **📅 12 Seksi Bulan** - Setiap bulan memiliki seksi dengan foto dan catatan romantis
-- **🌐 Dukungan Dwibahasa** - Beralih antara Bahasa Inggris dan Indonesia
-- **🎵 Musik Latar** - Musik latar romantis opsional
-- **✨ Animasi Halus** - Didukung oleh GSAP dengan reveal saat scroll
-- **📱 Desain Responsif** - Indah di semua perangkat
-- **🎀 Elemen Scrapbook** - Sticky notes, efek selotip, stiker, doodle
-- **💫 Dekorasi Melayang** - Hati, bintang, dan elemen romantis
+- **📔 Jurnal Sinematik** - 12 galeri bulan dengan catatan pribadi dan dokumentasi foto.
+- **🍂 Estetika Warm Earthy** - Tema yang dikurasi menggunakan nada Sand, Clay, Denim, dan Olive untuk kesan dewasa dan organik.
+- **✨ Animasi GSAP Halus** - Reveal saat scroll, header paralaks, dan elemen scrapbook interaktif.
+- **🖋️ Elemen Scrapbook** - Efek kertas robek autentik, selotip kayu, pin tembaga, dan coretan pribadi.
+- **🌐 Dukungan Dwibahasa** - Beralih dengan mudah antara Bahasa Inggris dan Bahasa Indonesia.
+- **🎵 Audio Atmosferik** - Musik latar opsional untuk meningkatkan pengalaman bercerita.
+- **📱 Sangat Responsif** - Dibuat dengan teliti agar terlihat menakjubkan di semua perangkat.
 
 ### 🛠️ Teknologi
 
 - **Framework**: Next.js 15 (App Router)
-- **Bahasa**: TypeScript
-- **Styling**: TailwindCSS + Custom CSS
-- **Animasi**: GSAP + ScrollTrigger
-- **Smooth Scroll**: Lenis
-- **Font**: Caveat (tulisan tangan) + Outfit (body)
+- **Styling**: TailwindCSS & Vanilla CSS
+- **Animasi**: GSAP (GreenSock) + ScrollTrigger
+- **Smooth Scroll**: Lenis Scroll
+- **Font**: Outfit & Caveat (Handwriting)
 
-### 🚀 Cara Memulai
+### 🚀 Cara Menjalankan
 
 ```bash
 # Clone repository
-git clone https://github.com/Douzxy/our-love-story.git
+git clone https://github.com/Douzxy/Journey-of-the-Year.git
 
 # Masuk ke folder project
-cd our-love-story
+cd Journey-of-the-Year
 
-# Install dependencies
+# Install dependensi
 npm install
 
-# Jalankan development server
+# Jalankan server pengembangan
 npm run dev
 
 # Buka http://localhost:3000
 ```
 
-### 📸 Menambahkan Foto
+### 💝 Dibuat Oleh
 
-1. Buat folder di `public/photos/` untuk setiap bulan:
-
-   ```
-   public/photos/january/
-   public/photos/february/
-   ...
-   ```
-
-2. Tambahkan foto bernomor (1.jpg, 2.jpg, dst.)
-
-3. Update caption di `src/context/LanguageContext.tsx`
-
-### 🎵 Menambahkan Musik
-
-Letakkan file musik latar di:
-
-```
-public/music/background.mp3
-```
-
-### 💝 Dibuat Dengan Cinta
-
-Dibuat oleh **Edo Priyatna** untuk seseorang yang spesial 💕
+Dibuat oleh **Edo Priyatna** sebagai dokumentasi perjalanan pribadi yang berkesan. ✨
 
 ---
 
 <div align="center">
 
-### 💕 Made with Love by Edo Priyatna (Douzxy) 💕
+### ✨ Journey Of The Year 2025 — Edo Priyatna (Douzxy) ✨
 
-_"Bersamamu adalah rumah yang paling indah"_
+_"Every moment is a story worth keeping"_  
+_"Setiap momen adalah cerita yang layak dikenang"_
 
-_"With you is the most beautiful home"_
-
-⭐ Star this repo if you like it!
+🏔️ **[Douzxy/Journey-of-the-Year](https://github.com/Douzxy/Journey-of-the-Year)** 🏔️
 
 </div>
